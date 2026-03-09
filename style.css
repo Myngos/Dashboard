@@ -32,6 +32,7 @@ body{
 .top{
     grid-area: top;
     background-color: white;
+    padding: 0 0 0 20px;
 }
 
 .main{
@@ -44,17 +45,16 @@ body{
 
 .mdi {
   font-size: 24px;
-  color: white;
+  color: rgb(14, 13, 13);
 }
 .top-top{
     display: flex;
-    padding: 30px;
+    padding: 10px;
     
 }
 .top-top > .mdi{
     color: black;
 }
-
 
 .top-top > p{
     font-weight: 800;
@@ -77,10 +77,33 @@ img {
 
 button{
     background-color: rgb(35, 35, 229);
-    padding: 10px;
     width: 120px;
+    height: 60px;
     border: none;
     border-radius: 30px;
     color: white;
     font-size: 24px;
+    margin: 10px;
+}
+
+.top-bottom{
+    display: flex;
+}
+.text{
+    padding: 0;
+    margin-right: 40%;
+}
+
+.text > p{
+    font-size: 13px;
+    margin: 0;
+}
+.top-top input[type=text] {
+  float: right;
+  border: none;
+  font-size: 24px;
+  background-color: rgb(161, 159, 156);
+  border-radius: 30px;
+  width: 50%;
+  margin: 0 20% 0 5%;
 }
