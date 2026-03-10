@@ -107,3 +107,36 @@ button{
   width: 50%;
   margin: 0 20% 0 5%;
 }
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "projects side-main"
+        "projects side-main";
+    gap: 20px;
+    height: 80vh;
+    padding: 20px;
+}
+
+.projects{
+    grid-area: projects;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project{
+    width: 300px;
+    height: 140px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.side-main{
+    grid-area: side-main;
+}
+
+.trend{
+    display: flex;
+}
