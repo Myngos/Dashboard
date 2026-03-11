@@ -1,0 +1,1 @@
+This project is a practice exercise focused on using CSS Grid for layout. The dashboard includes a sidebar navigation, top header bar, project cards, announcements panel, and a trending users section.
