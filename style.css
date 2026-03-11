@@ -4,14 +4,11 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;   
     grid-template-areas:
-        "side top top top"
-        "side main main main"
-        "side main main main"
-        "side main main main";;
+        "side top"
+        "side main";
     height: 100vh;
 }
 
@@ -68,7 +65,7 @@ a{
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 24px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
 }
@@ -90,12 +87,13 @@ img {
 }
 button{
     background-color: rgb(35, 35, 229);
-    width: 120px;
-    height: 60px;
+    width: auto;
     border: none;
     border-radius: 30px;
     color: white;
-    font-size: 24px;
+    font-size: 16px;
+    padding: 0 16px;
+    height: 40px;
     margin: 10px;
 }
 
@@ -112,42 +110,41 @@ button{
     margin: 0;
 }
 .top-top input[type=text] {
-  float: right;
-  border: none;
-  font-size: 24px;
-  background-color: rgb(161, 159, 156);
-  border-radius: 30px;
-  width: 50%;
-  margin: 0 20% 0 5%;
+    flex: 1; 
+    border: none;
+    font-size: 18px;
+    background-color: rgb(161, 159, 156);
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin: 0 20px;
+    min-width: 0;  
 }
 .main{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
-        "projects side-main"
         "projects side-main";
     gap: 20px;
-    height: 80vh;
     padding: 20px;
     background-color: #f0f2f5;
+    overflow-y: auto; 
 }
 
 .projects{
     grid-area: projects;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;                        
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    align-content: start;
 }
 
 .project{
-    width: 340px;
     padding: 10px;
     background: white;
     border-radius: 10px;
-    height: auto; 
     min-height: 160px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    border-left: 8px solid #f0c419; 
+    border-left: 8px solid #f0c419;
 }
 
 .side-main{
